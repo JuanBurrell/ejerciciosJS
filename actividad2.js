@@ -4,6 +4,9 @@ class Claseprueba{
         this._num1 = 0;
         this._num2 = 0;
     }
+    saludar(){
+        return('Hola '+this._nom+', sus números son: '+this._num1+' y '+this._num2);
+    }
 //-------------------------------------
     get num1(){
         return this._num1;
@@ -27,9 +30,6 @@ class Claseprueba{
 //----------------------------------------
     get saludo(){
         return this.saludar();
-    }
-    saludar(){
-        return('Hola '+this._nom+', sus números son: '+this._num1+' y '+this._num2);
     }
 }
 
