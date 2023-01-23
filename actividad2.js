@@ -40,19 +40,6 @@ class Aritmetica{
         this._num2 = 0;
     }
 //-------------------------------------
-    get num1(){
-        return this._num1;
-    }
-    set num1(num1){
-        this._num1 = num1;
-    }
-    get num2(){
-        return this._num2;
-    }
-    set num2(num2){
-        this._num2 = num2;
-    }
-//----------------------------------------
     get imprimir(){
         return (this.suma()+this.resta()+this.muliplicacion()+this.division());
     }
@@ -68,6 +55,19 @@ class Aritmetica{
     division(){
         return('\nDivision de los valores: '+(this._num1/this._num2))
     }
+//---------------------------------------- 
+    get num1(){
+        return this._num1;
+    }
+    set num1(num1){
+        this._num1 = num1;
+    }
+    get num2(){
+        return this._num2;
+    }
+    set num2(num2){
+        this._num2 = num2;
+    }
 //---------------------------------------------
 }
 
@@ -76,12 +76,13 @@ class Caluladora extends Aritmetica{
         super(_num1,_num2);
     }
 
-    get potencia(){
-        return this.calcpoten();
-    }
     calcpoten(){
         return(this._num1+" elevado a la potencia de "+
                this._num2+" es igual a: "+(this._num1**this._num2));
+    }
+
+    get potencia(){
+        return this.calcpoten();
     }
 }
 
