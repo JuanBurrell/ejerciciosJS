@@ -54,13 +54,19 @@ class Aritmetica{
     }
 //----------------------------------------
     get imprimir(){
-        return this.operaciones();
+        return (this.suma()+this.resta()+this.muliplicacion()+this.division());
     }
-    operaciones(){
-        return('Suma de los valores: '+(this._num1+this._num2)+
-        '\nResta de los valores: '+(this._num1-this._num2)+
-        '\nMultiplicación de los valores: '+(this._num1*this._num2)+
-        '\nDivision de los valores: '+(this._num1/this._num2))
+    suma(){
+        return('Suma de los valores: '+(this._num1+this._num2))
+    }
+    resta(){
+        return('\nResta de los valores: '+(this._num1-this._num2))
+    }
+    muliplicacion(){
+        return('\nMultiplicación de los valores: '+(this._num1*this._num2))
+    }
+    division(){
+        return('\nDivision de los valores: '+(this._num1/this._num2))
     }
 //---------------------------------------------
 }
