@@ -74,6 +74,7 @@ class Aritmetica{
 class Caluladora extends Aritmetica{
     constructor(_num1,_num2){
         super(_num1,_num2);
+        this.Aritmetica = new Aritmetica(_num1,_num2);
     }
 
     calcpoten(){
