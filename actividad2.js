@@ -70,11 +70,10 @@ class Aritmetica{
     }
 //---------------------------------------------
 }
-
 class Caluladora extends Aritmetica{
     constructor(_num1,_num2){
         super(_num1,_num2);
-        this.Aritmetica = new Aritmetica(_num1,_num2);
+        this.aritmetica = new Aritmetica(_num1,_num2);
     }
 
     calcpoten(){
@@ -92,12 +91,11 @@ const Aritmet1 = new Aritmetica();
 const Potenc1 = new Caluladora();
 
 Classprba1.nombre = "Gabi";
-(Classprba1.num1)=(Aritmet1.num1)=(Potenc1._num1)= 10;
-(Classprba1.num2)=(Aritmet1.num2)=(Potenc1._num2)= 2;
+(Classprba1.num1)=(Potenc1._num1)= 10;
+(Classprba1.num2)=(Potenc1._num2)= 2;
 
 
 console.log(Classprba1.saludo);
-//console.log(Aritmet1.imprimir);
 console.log(Potenc1.imprimir);
 console.log(Potenc1.potencia);
 
